@@ -169,7 +169,7 @@ class SwaggerApiView(APIDocView):
         urlconf = getattr(self.request, "urlconf", None)
         exclude_namespaces = rfs.SWAGGER_SETTINGS.get('exclude_namespaces')
         apis = urlparser.get_apis(
-            urlconf=urlconf, 
+            urlconf=urlconf,
             filter_path=filter_path,
             exclude_namespaces=exclude_namespaces
         )
